@@ -1,11 +1,11 @@
-import psycopg2
+#import psycopg2
 from flask import Flask, render_template  
 app = Flask(__name__)
 @app.route('/')
 def home():
-  return render_template('homepage.html')
+  return render_template('home.html')
 
-@app.route('/Our-services')
+"""@app.route('/Our-services')
 def services():
   return render_template('services.html')
 
@@ -15,7 +15,7 @@ def book():
 
 @app.route('/callender')
 def calender():
-  return render_template('calender.html')
+  return render_template('calender.html')"""
 
 if __name__=='__main__':
   
